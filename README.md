@@ -1,2 +1,2 @@
-Minimal todo list
+# Minimal todo list
 Javascript minimal todo list

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لیست وظایف</title>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="flex direction-column align-center">
+    <header class="header">
+        <h1 class="header__title">لیست وظایف</h1>
+    </header>
+    <main class="todo">
+        <div class="todo__form flex justify-center">
+            <div class="form-group bg-white flex align-center justify-center margin-left-1">
+                <input type="text" id="title" name="title">
+                <i class="icon fa-solid fa-plus" id="add" title="Add"></i>
+            </div>
+            <div class="form-group bg-white">
+                <label class="select">
+                    <select name="filter" id="filter">
+                        <option value="All" class="all">همه</option>
+                        <option value="Compeleted" class="compeleted">انجام شده</option>
+                        <option value="Uncompeleted" class="uncompeleted">انجام نشده</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="todo__list">
+            <div class="item flex justify-between">
+                <div class="item__title">عنوان وظیفه</div>
+                <div class="item__action flex align-center">
+                    <i class="icon fa-solid fa-check" id="done" title="Done"></i>
+                    <i class="icon fa-regular fa-pen-to-square" id="edit" title="Edit"></i>
+                    <i class="icon fa-regular fa-trash-can" id="delete" title="Delete"></i>
+                </div>
+            </div>
+            <div class="item flex justify-between">
+                <div class="item__title">عنوان وظیفه</div>
+                <div class="item__action flex align-center">
+                    <i class="icon fa-solid fa-check" id="done" title="Done"></i>
+                    <i class="icon fa-regular fa-pen-to-square" id="edit" title="Edit"></i>
+                    <i class="icon fa-regular fa-trash-can" id="delete" title="Delete"></i>
+                </div>
+            </div>
+            <div class="item flex justify-between">
+                <div class="item__title">عنوان وظیفه</div>
+                <div class="item__action flex align-center">
+                    <i class="icon fa-solid fa-check" id="done" title="Done"></i>
+                    <i class="icon fa-regular fa-pen-to-square" id="edit" title="Edit"></i>
+                    <i class="icon fa-regular fa-trash-can" id="delete" title="Delete"></i>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

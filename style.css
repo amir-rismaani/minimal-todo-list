@@ -1,0 +1,139 @@
+@import url("./assets/styles/fonts.css");
+
+/* Reset
+=========*/
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* General
+===========*/
+:root{
+    --color-primary: #6d28d9;
+    --color-secondary: #ede9fa;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #7c7c7c;
+    --color-red: #db2777;
+    --color-bg: #f6f6f6;
+    --spacing: .1rem;
+    --transition: all .3s linear;
+}
+
+
+html{
+    direction: rtl;
+    font-size: 62.5%;
+}
+
+
+body, *{
+    font-family: vazir;
+    font-size: 1.6rem;
+}
+
+body{
+    background-color: var(--color-bg);
+    margin-top: 5rem;
+}
+
+
+input{
+    border: none;
+    outline: none;
+}
+
+select{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+.select{
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.select::after{
+    content: "\f078";
+    font-family: FontAwesome;
+    z-index: 1;
+    position: absolute;
+    color: var(--color-primary);
+    left: 0rem;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.form-group{
+    padding: .5rem 1rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.direction-column{
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+
+.margin-left-1{
+    margin-left: 1rem;
+}
+.bg-white{
+    background-color: var(--color-white);
+}
+.header{
+    margin-bottom: 2rem;
+}
+
+.header__title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.icon{
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    cursor: pointer;
+    caret-color: transparent;
+}
+
+.icon:hover{
+    color: var(--color-red);
+}
+
+
+.todo__list{
+    margin-top: 2rem;    
+}
+
+.todo__list .item{
+    background-color: var(--color-secondary);
+    padding: .5rem;
+    margin: var(--spacing);
+    transition: all .3s ease;
+}
+
+.item__action{
+    gap: 1rem;
+}
