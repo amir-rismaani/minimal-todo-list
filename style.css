@@ -118,10 +118,15 @@ select{
     caret-color: transparent;
 }
 
+
 .icon:hover{
     color: var(--color-red);
 }
 
+#add-todo{
+    background-color: transparent;
+    border: none;
+}
 
 .todo__list{
     margin-top: 2rem;    
@@ -132,6 +137,14 @@ select{
     padding: .5rem;
     margin: var(--spacing);
     transition: all .3s ease;
+}
+
+.item.completed{
+    opacity: .5;
+}
+
+.completed .item__title{
+    text-decoration: line-through;
 }
 
 .item__action{

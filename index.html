@@ -21,8 +21,10 @@
     <main class="todo">
         <div class="todo__form flex justify-center">
             <div class="form-group bg-white flex align-center justify-center margin-left-1">
-                <input type="text" id="title" name="title">
-                <i class="icon fa-solid fa-plus" id="add" title="Add"></i>
+                <form>
+                    <input type="text" id="todo-input">
+                    <button type="submit" id="add-todo"><i class="icon fa-solid fa-plus"></i></button>
+                </form>
             </div>
             <div class="form-group bg-white">
                 <label class="select">
@@ -35,32 +37,8 @@
             </div>
         </div>
         <div class="todo__list">
-            <div class="item flex justify-between">
-                <div class="item__title">عنوان وظیفه</div>
-                <div class="item__action flex align-center">
-                    <i class="icon fa-solid fa-check" id="done" title="Done"></i>
-                    <i class="icon fa-regular fa-pen-to-square" id="edit" title="Edit"></i>
-                    <i class="icon fa-regular fa-trash-can" id="delete" title="Delete"></i>
-                </div>
-            </div>
-            <div class="item flex justify-between">
-                <div class="item__title">عنوان وظیفه</div>
-                <div class="item__action flex align-center">
-                    <i class="icon fa-solid fa-check" id="done" title="Done"></i>
-                    <i class="icon fa-regular fa-pen-to-square" id="edit" title="Edit"></i>
-                    <i class="icon fa-regular fa-trash-can" id="delete" title="Delete"></i>
-                </div>
-            </div>
-            <div class="item flex justify-between">
-                <div class="item__title">عنوان وظیفه</div>
-                <div class="item__action flex align-center">
-                    <i class="icon fa-solid fa-check" id="done" title="Done"></i>
-                    <i class="icon fa-regular fa-pen-to-square" id="edit" title="Edit"></i>
-                    <i class="icon fa-regular fa-trash-can" id="delete" title="Delete"></i>
-                </div>
-            </div>
-
         </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
