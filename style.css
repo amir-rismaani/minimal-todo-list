@@ -143,6 +143,9 @@ select{
     opacity: .5;
 }
 
+.item__title{
+    color: var(--color-primary);
+}
 .completed .item__title{
     text-decoration: line-through;
 }
